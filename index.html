@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | E-commerce Product Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.svg" alt="Sneakers Logo">
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="cart-container">
+      <img src="images/icon-cart.svg" id="cart-icon" alt="Cart">
+      <div class="cart-dropdown">
+        <p id="cart-text">Your cart is empty</p>
+      </div>
+    </div>
+    <img class="avatar" src="images/image-avatar.png" alt="User Avatar">
+    <div class="menu-toggle">
+      <img id="menu-icon" src="images/icon-menu.svg" alt="Menu">
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="product-gallery">
+    <img id="main-image" src="images/image-product-1.jpg" alt="Main Product">
+    <div class="thumbnails">
+      <img class="thumb" src="images/image-product-1-thumbnail.jpg" alt="Thumb 1">
+      <img class="thumb" src="images/image-product-2-thumbnail.jpg" alt="Thumb 2">
+      <img class="thumb" src="images/image-product-3-thumbnail.jpg" alt="Thumb 3">
+      <img class="thumb" src="images/image-product-4-thumbnail.jpg" alt="Thumb 4">
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h1>Fall Limited Edition Sneakers</h1>
+    <p class="brand">Sneaker Company</p>
+    <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    <p class="price">$125.00 <span class="discount">50% off</span></p>
+    <p class="old-price">$250.00</p>
+
+    <div class="quantity-selector">
+      <button id="minus"><img src="images/icon-minus.svg" alt="Minus"></button>
+      <span id="quantity">1</span>
+      <button id="plus"><img src="images/icon-plus.svg" alt="Plus"></button>
+    </div>
+
+    <button class="add-to-cart">
+      <img src="images/icon-cart.svg" alt="Cart"> Add to Cart
+    </button>
+  </div>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox">
+  <img id="lightbox-image" src="images/image-product-1.jpg" alt="Lightbox Image">
+  <button class="close-lightbox"><img src="images/icon-close.svg" alt="Close"></button>
+</div>
+
+<footer>
+  <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Jatin</a>.</p>
+</footer>
+
+</body>
+</html>
